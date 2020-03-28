@@ -4,7 +4,10 @@
   "description": "json-resume-to-pdf",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "start": "parcel index.html",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "tslint --cache --ext .ts, .tsx ."
   },
   "keywords": [
     "json",
@@ -14,6 +17,12 @@
   "author": "Ian Phipps",
   "license": "MIT",
   "dependencies": {
-    "parcel-bundler": "^1.12.4"
+    "@types/react": "^16.9.26",
+    "@types/react-dom": "^16.9.5",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3"
   }
 }
