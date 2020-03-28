@@ -1,0 +1,19 @@
+{
+  "name": "resume",
+  "version": "0.0.1",
+  "description": "json-resume-to-pdf",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "json",
+    "react",
+    "resume"
+  ],
+  "author": "Ian Phipps",
+  "license": "MIT",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
