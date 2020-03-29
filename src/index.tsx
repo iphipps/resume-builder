@@ -3,12 +3,15 @@ import * as ReactDOM from 'react-dom';
 import { resume } from './sample-resume';
 import { Header } from './components/header';
 import { Main } from './components/main';
+import { Global } from '@emotion/core';
+import { styles } from './globalStyles';
 
 const { header, main } = resume;
 ReactDOM.render(
-  <div>
+  <>
+    <Global styles={styles} />
     <Header content={header} />
     <Main content={main} />
-  </div>,
+  </>,
   document.getElementById('body')
 );
