@@ -1,5 +1,11 @@
-import React from 'react';
+import * as React from 'react';
+import { IHeader } from '~/lib';
 
-export const Header = () => {
+type HeaderProps = {
+  content: IHeader;
+}
+
+export const Header = ({content}: HeaderProps) => {
+  console.log(content);
   return <header>hello</header>;
 };

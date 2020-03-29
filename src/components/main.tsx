@@ -1,7 +1,9 @@
-import React from 'react';
-import * as Data from '../../resume.json';
+import * as React from 'react';
+import { IMain } from '~lib';
 
-export const Main = (Data) => {
-  console.log(Data);
+type MainProps = {
+  content: IMain[];
+}
+export const Main = ({content}: MainProps) => {
   return <main>hello</main>;
 };

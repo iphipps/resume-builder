@@ -3,6 +3,7 @@
     "resolveJsonModule": true,
     "jsx": "react",
     "baseUrl": "./src",
+    "lib": ["es2015", "dom"],
     "paths": {
       "~*": ["./*"]
     }

@@ -1,6 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Header } from '~/components/header';
-import { Body } from '~/components/header';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import { resume } from 'sample-resume';
+import { Header } from './components/header';
+import { Main } from './components/main';
 
-ReactDOM.render(<>react code goes here</>, document.getElementById('body'));
+ReactDOM.render(
+  <>
+    <Header content={resume.header} />
+    <Main content={resume.main} />
+  </>,
+  document.getElementById('body')
+);

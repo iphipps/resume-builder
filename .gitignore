@@ -1,6 +1,6 @@
 tmp
 node_modules
-resume.json
+resume.ts
 dist
 .cache
 
