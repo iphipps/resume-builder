@@ -16,6 +16,10 @@
   ],
   "author": "Ian Phipps",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iphipps/resume-builder"
+  },
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@types/react": "^16.9.26",
