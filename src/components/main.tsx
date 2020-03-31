@@ -1,10 +1,16 @@
 import * as React from 'react';
 import { IMain } from '~lib';
+import { Section } from './section';
 
 type MainProps = {
   content: IMain[]
 };
 export const Main = ({ content }: MainProps) => {
-  console.log(content);
-  return <main>hello</main>;
+  return (
+    <main>
+      {content.map((content, index) => (
+        <Section content={content} key={index} />
+      ))}
+    </main>
+  );
 };

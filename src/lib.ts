@@ -6,19 +6,19 @@ export interface IHeader {
   right2: string;
 }
 
-interface IDescription {
+export interface IDescription {
   type: 'bullets' | 'paragraphs';
   entries: string[];
 }
 
-interface IMainEntries {
-  title: string;
-  date: string;
+export interface IMainEntries {
+  title?: string;
+  date?: string;
   description: IDescription;
 }
 
 export interface IMain {
-  title: string;
+  title?: string;
   entries: IMainEntries[];
 }
 
