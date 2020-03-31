@@ -5,6 +5,7 @@ import { Section } from './section';
 type MainProps = {
   content: IMain[]
 };
+
 export const Main = ({ content }: MainProps) => {
   return (
     <main>

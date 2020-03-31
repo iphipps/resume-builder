@@ -8,12 +8,13 @@ type HeaderProps = {
 
 const Header_ = styled.header`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto 1fr auto;
 `;
 
 const Side = styled.div``;
-
-const Title_ = styled.h1``;
+const Title_ = styled.h1`
+  text-align: center;
+`;
 
 export const Header = ({
   content: { left1, left2, right1, right2, title }

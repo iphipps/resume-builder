@@ -14,7 +14,7 @@ export interface IDescription {
 export interface IMainEntries {
   title?: string;
   date?: string;
-  description: IDescription;
+  description?: IDescription;
 }
 
 export interface IMain {

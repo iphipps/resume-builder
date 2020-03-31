@@ -6,6 +6,7 @@ export const styles = css`
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 50.9374rem 1fr;
+    font-family: 'Roboto', sans-serif;
     > div {
       grid-column-start: 2;
       width: 50.9375rem;
@@ -18,5 +19,16 @@ export const styles = css`
     }
   }
 
-
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  quote,
+  p,
+  address {
+    padding: 0;
+    margin: 0;
+  }
 `;
