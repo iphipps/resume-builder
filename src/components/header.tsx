@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { IHeader } from '~/lib';
 import styled from '@emotion/styled';
+import { spacings } from '../globalStyles';
 
 type HeaderProps = {
   content: IHeader
@@ -11,7 +12,11 @@ const Header_ = styled.header`
   grid-template-columns: auto 1fr auto;
 `;
 
-const Side = styled.div``;
+const Side = styled.div`
+  p {
+    ${spacings.mbd2};
+  }
+`;
 const Title_ = styled.h1`
   text-align: center;
 `;
@@ -22,8 +27,8 @@ export const Header = ({
   return (
     <Header_>
       <Side>
-        <p>{left1}</p>
-        <p>{left2}</p>
+        <p className="mb-b">{left1}</p>
+        <p className="mb-b">{left2}</p>
       </Side>
       <Title_>{title}</Title_>
 
