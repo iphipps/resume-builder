@@ -9,6 +9,10 @@ type ArticleProps = {
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr auto;
+  time {
+    align-items: flex-end;
+    font-weight: 500;
+  }
 `;
 export const Article = ({
   content: { title, date, description }

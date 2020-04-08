@@ -76,7 +76,7 @@ export const styles = css`
     display: grid;
     grid-template-columns: 1fr 50.9374rem 1fr;
     font-family: 'Roboto', sans-serif;
-    ${fonts.b};
+    ${fonts.d1};
     > div {
       grid-column-start: 2;
       width: 50.9375rem;
@@ -106,12 +106,12 @@ export const styles = css`
     margin: 0;
   }
   h1 {
-    ${fonts.u3};
-  }  h2 {
     ${fonts.u2};
+  }  h2 {
+    ${fonts.u1};
   }
   h3 {
-    ${fonts.u1};
+    ${fonts.b};
   }
   article {
     ${spacings.mbd1}

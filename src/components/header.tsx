@@ -10,11 +10,12 @@ type HeaderProps = {
 const Header_ = styled.header`
   display: grid;
   grid-template-columns: auto 1fr auto;
+  ${spacings.mbd1};
 `;
 
 const Side = styled.div`
   p {
-    ${spacings.mbd2};
+    padding: 0;
   }
 `;
 const Title_ = styled.h1`
