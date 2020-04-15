@@ -11,3 +11,9 @@ npm start
 ```
 
 Next, head to the browser at the correct port. To create the PDF, print the document and save as PDF.
+
+### Gotchas
+
+Spell check your resume.ts file.
+
+

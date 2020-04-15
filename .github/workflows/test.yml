@@ -1,0 +1,22 @@
+name: workflows/test.yml
+on:
+  pull_request:
+  push:
+    branches:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matric.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npx tsc
+        env:
+          CI: true
