@@ -25,12 +25,12 @@ export const fonts = {
     line-height: 1.5;
   `,
   b: css`
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.5;
     letter-spacing: 0.00938em;
   `,
   u1: css`
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.6;
     letter-spacing: 0.0075em;
     font-weight: 500;
@@ -107,11 +107,15 @@ export const styles = css`
   }
   h1 {
     ${fonts.u2};
-  }  h2 {
-    ${fonts.u1};
   }
-  h3 {
+  h2 {
+    ${fonts.u1};
+    ${spacings.mbd3}
+  }
+  h3,
+  time {
     ${fonts.b};
+    ${spacings.mbd3}
   }
   article {
     ${spacings.mbd1}

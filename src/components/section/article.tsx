@@ -8,7 +8,7 @@ type ArticleProps = {
 };
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 1fr auto;
+grid-template-columns: 1fr auto;
   time {
     align-items: flex-end;
     font-weight: 500;
