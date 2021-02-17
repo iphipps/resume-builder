@@ -9,7 +9,7 @@ type HeaderProps = {
 
 const Header_ = styled.header`
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr 1fr 1fr;
   ${spacings.mbd1};
 `;
 
@@ -18,6 +18,11 @@ const Side = styled.div`
     padding: 0;
   }
 `;
+
+const RightSide = styled(Side)`
+  margin-left: 200px;
+`;
+
 const Title_ = styled.h1`
   text-align: center;
 `;
@@ -33,10 +38,10 @@ export const Header = ({
       </Side>
       <Title_>{title}</Title_>
 
-      <Side>
+      <RightSide>
         <p>{right1}</p>
         <p>{right2}</p>
-      </Side>
+      </RightSide>
     </Header_>
   );
 };
