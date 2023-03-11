@@ -3,4 +3,4 @@ node_modules
 resume.ts
 dist
 .cache
-
+.parcel-cache

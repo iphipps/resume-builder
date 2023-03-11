@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { resume } from './sample-resume';
+import { resume } from '../re';
 import { Header } from './components/header';
 import { Main } from './components/main';
 import { Global } from '@emotion/core';
@@ -11,7 +11,7 @@ ReactDOM.render(
   <>
     <Global styles={styles} />
     <Header content={header} />
-    <Main content={main} />
+    <Main contents={main} />
   </>,
   document.getElementById('body')
 );

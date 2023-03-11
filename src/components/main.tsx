@@ -3,13 +3,13 @@ import { IMain } from '~lib';
 import { Section } from './section';
 
 type MainProps = {
-  content: IMain[]
+  contents: IMain[]
 };
 
-export const Main = ({ content }: MainProps) => {
+export const Main = ({ contents }: MainProps) => {
   return (
     <main>
-      {content.map((content, index) => (
+      {contents.map((content, index) => (
         <Section content={content} key={index} />
       ))}
     </main>
