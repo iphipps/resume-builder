@@ -88,6 +88,17 @@ export const styles = css`
       }
     }
   }
+  .no-print {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+
+  }
+  @media print {
+    .no-print {
+      display: none;
+    }
+  }
   ul {
     margin-top: 0;
     margin-bottom: 0;
