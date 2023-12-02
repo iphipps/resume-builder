@@ -1,8 +1,11 @@
+
+![Save to pdf gif](./createpdf.gif)
+
 # Introduction
 
-This repository should be a quick way to get a resume from a data structure to PDF. That is, all styling and formatting should be done for you.
+Word processors are frustrating for creating a resume. You should be able to focus on the content of your resume, rather than noodling with the format.  
+This accomplishes that by allowing you to work in a JavaScript data object.
 
-Why?  Because you should probably have an up-to-date resume, especially in the midst of a pandemic.
 
 ## Installation
 
@@ -12,10 +15,11 @@ npm start
 ```
 
 Then start changing [resume file](./src/sample-resume.ts);
+
 Next, head to the browser at the correct port. To create the PDF, print the document and save as PDF.
 
 ### Gotchas
 
-Spell check your resume.ts file.
+Spell check your resume.ts file. This doesn't do that for you automatically.
 
 
