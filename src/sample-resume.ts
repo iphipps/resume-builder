@@ -1,50 +1,109 @@
-import { IResume } from '~/lib';
+import { IResume } from "~/lib";
 
-export const resume: IResume = {
+// Note: chatgpt helped create this Lorax inspired resume
+//
+export const sample: IResume = {
   header: {
-    left1: '123 Main Street',
-    left2: 'github/myun',
-    title: 'My Name',
-    right1: 'email@example.com',
-    right2: '555-555-5555'
+    left1: "Thneedville, Truffula Valley",
+    left2: "github/myun",
+    title: "Once-ler",
+    right1: "oncerler@thneedville.com",
+    right2: "555-555-5555",
   },
   main: [
     {
       entries: [
         {
           description: {
-            type: 'paragraphs',
+            type: "paragraphs",
             entries: [
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-            ]
-          }
-        }
-      ]
+              "Experienced entrepreneur with a passion for innovation, resource exploitation, and Thneed production. Proven track record of converting natural resources into marketable goods. Skilled in ignoring the concerns of the Lorax and other eco-friendly entities.",
+            ],
+          },
+        },
+      ],
     },
     {
-      title: 'Experience',
+      title: "Experience",
       entries: [
         {
-          title: 'Salesperson Company XYZ',
-          date: '2014 -- Present',
+          title:
+            "Environmental Educator • Once-ler's Lorax Outreach Program • Thneedville, Va",
+          date: "Once upon a time – Present",
           description: {
-            type: 'bullets',
-            entries: ['Sold a million widgets']
-          }
+            type: "bullets",
+            entries: [
+              'Created and implemented the "Thneedville Youth Engagement Initiative" to educate youngsters about the fascinating world of Thneeds and the Lorax.',
+              `Developed engaging storytelling techniques to make the Lorax's cautionary tales entertaining for children while downplaying the environmental consequences.`,
+              "Organized Thneed-making workshops to inspire the next generation of entrepreneurial minds.",
+              "Managed to convince a few naive youngsters that the Truffula Trees were actually happier being turned into Thneeds.",
+            ],
+          },
+        },
+
+        {
+          title:
+            "Founder & CEO • The Lorax LLC (Formerly Truffula Valley) • Thneedville, Va",
+          date: "Once upon a time – Later",
+          description: {
+            type: "bullets",
+            entries: [
+              "Successfully implemented deforestation initiatives to procure Truffula Trees for mass Thneed production.",
+              "Developed patented Thneed-making machinery, significantly increasing production efficiency.",
+              "Overcame multiple Lorax interventions and protests through persuasive speeches and catchy jingles.",
+            ],
+          },
         },
         {
-          title: 'Salesperson Company ABC',
-          date: '2010-2014',
+          title:
+            "Intern • Thneedville Sustainable Alternatives • Thneedville, Va",
+          date: "Once upon a time – Later",
           description: {
-            type: 'paragraphs',
+            type: "paragraphs",
             entries: [
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-              'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-              'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-            ]
-          }
-        }
-      ]
-    }
-  ]
+              "Explored alternative, eco-friendly business models, but quickly realized they were less profitable.",
+              "Conducted a thorough analysis of potential competitors, namely Lorax sympathizers.",
+            ],
+          },
+        },
+      ],
+    },
+    {
+      title: "Extras",
+      entries: [
+        {
+          title: "Languages",
+          description: {
+            type: "paragraphs",
+            entries: [
+              "Thneedology, Resource Exploitation, Environmental Ignorance, Persuasive Speaking, Jingle Writing",
+            ],
+          },
+        },
+        {
+          title: "Awards and Achievements",
+          description: {
+            type: "paragraphs",
+            entries: [
+              `Thneedville's "Most Profitable Business" Award (multiple years)`,
+              '"Greenwashing Master" Certificate',
+            ],
+          },
+        },
+      ],
+    },
+    {
+      title: "Education",
+      entries: [
+        {
+          title: "Thneedville School of Business and Greed",
+          date: "2007",
+          description: {
+            type: "paragraphs",
+            entries: ["Bachelor of Thneedology"],
+          },
+        },
+      ],
+    },
+  ],
 };
