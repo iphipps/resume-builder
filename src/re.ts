@@ -1,1 +1,0 @@
-/Users/ian/projects/iphipps/resume/resume.ts
