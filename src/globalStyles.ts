@@ -129,7 +129,7 @@ export const styles = css`
     ${spacings.mbd3}
   }
   article {
-    ${spacings.mbd1}
+    ${spacings.mbd2}
   }
   ${spacings}
   ${fonts}

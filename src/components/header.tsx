@@ -20,7 +20,7 @@ const Side = styled.div`
 `;
 
 const RightSide = styled(Side)`
-  margin-left: 200px;
+  margin-left: 60px;
 `;
 
 const Title_ = styled.h1`
