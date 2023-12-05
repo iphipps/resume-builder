@@ -13,7 +13,7 @@ import { IResume } from '~lib';
 const Switcher = () => {
   const [selected, select] = React.useState<IResume>(sample);
   return (
-    <>
+    <div contentEditable spellCheck>
       <div className="no-print">
         {/* <button onClick={() => select(re)}>re</button> */}
         <button onClick={() => select(sample)}>sample</button>
@@ -21,7 +21,7 @@ const Switcher = () => {
       <Global styles={styles} />
       <Header content={selected.header} />
       <Main contents={selected.main} />
-    </>
+    </div>
   );
 };
 
