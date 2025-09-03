@@ -4,4 +4,4 @@ resume.ts
 dist
 .cache
 .parcel-cache
-./src/re.ts
+src/re.ts
