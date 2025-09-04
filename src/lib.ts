@@ -8,7 +8,12 @@ export interface IHeader {
 
 export interface IDescription {
   type: 'bullets' | 'paragraphs';
-  entries: string[];
+  entries: (string | INestedDescription)[];
+}
+
+export interface INestedDescription {
+  title?: string;
+  description: IDescription;
 }
 
 export interface IMainEntries {

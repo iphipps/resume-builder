@@ -1,20 +1,44 @@
 import * as React from 'react';
-import { IDescription } from '~lib';
+import { IDescription, INestedDescription } from '~lib';
 
 type DescriptionProps = {
   content: IDescription
 };
 
 type EntriesProps = {
-  entries: string[]
+  entries: (string | INestedDescription)[]
+};
+
+// Helper function to convert asterisks to bold tags
+const formatText = (text: string) => {
+  return text.split(/(\*[^*]+\*)/).map((part, index) => {
+    if (part.startsWith('*') && part.endsWith('*')) {
+      return <strong key={index}>{part.slice(1, -1)}</strong>;
+    }
+    return part;
+  });
 };
 
 const Bullets = ({ entries }: EntriesProps) => {
   return (
     <ul>
-      {entries.map((entry, index) => (
-        <li key={index}>{entry}</li>
-      ))}
+      {entries.map((entry, index) => {
+        if (typeof entry === 'string') {
+          return (
+            <li key={index}>{formatText(entry)}</li>
+          );
+        } else {
+          // Handle nested description
+          return (
+            <li key={index}>
+              {entry.title && <div style={{ fontWeight: 'bold', marginBottom: '0.5em' }}>{entry.title}</div>}
+              <div style={{ marginLeft: '1em' }}>
+                <Description content={entry.description} />
+              </div>
+            </li>
+          );
+        }
+      })}
     </ul>
   );
 };
@@ -22,9 +46,23 @@ const Bullets = ({ entries }: EntriesProps) => {
 const Paragraphs = ({ entries }: EntriesProps) => {
   return (
     <>
-      {entries.map((entry, index) => (
-        <p key={index}>{entry}</p>
-      ))}
+      {entries.map((entry, index) => {
+        if (typeof entry === 'string') {
+          return (
+            <p key={index}>{formatText(entry)}</p>
+          );
+        } else {
+          // Handle nested description
+          return (
+            <div key={index}>
+              {entry.title && <div style={{ fontWeight: 'bold', marginBottom: '0.5em' }}>{entry.title}</div>}
+              <div style={{ marginLeft: '1em' }}>
+                <Description content={entry.description} />
+              </div>
+            </div>
+          );
+        }
+      })}
     </>
   );
 };

@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 import { sample } from './sample-resume';
 // TODO figure out a better way to store my resume file and not commit it
 // to this repo. Right now, I put my resume at ./re and just don't commit it.
-// import { re } from './re';
+import { re } from './re';
 import { Header } from './components/header';
 import { Main } from './components/main';
 import { Global } from '@emotion/core';
@@ -11,11 +11,11 @@ import { styles } from './globalStyles';
 import { IResume } from '~lib';
 
 const Switcher = () => {
-  const [selected, select] = React.useState<IResume>(sample);
+  const [selected, select] = React.useState<IResume>(re);
   return (
     <div contentEditable spellCheck>
       <div className="no-print">
-        {/* <button onClick={() => select(re)}>re</button> */}
+        <button onClick={() => select(re)}>re</button>
         <button onClick={() => select(sample)}>sample</button>
       </div>
       <Global styles={styles} />

@@ -76,6 +76,7 @@ export const styles = css`
     display: grid;
     grid-template-columns: 1fr 50.9374rem 1fr;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 10rem;
     ${fonts.d1};
     > div {
       grid-column-start: 2;
