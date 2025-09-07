@@ -31,8 +31,8 @@ const Bullets = ({ entries }: EntriesProps) => {
           // Handle nested description
           return (
             <li key={index}>
-              {entry.title && <div style={{ fontWeight: 'bold', marginBottom: '0.5em' }}>{entry.title}</div>}
-              <div style={{ marginLeft: '1em' }}>
+              {entry.title && <div style={{ fontWeight: 'bold', marginBottom: '0.2em' }}>{entry.title}</div>}
+              <div>
                 <Description content={entry.description} />
               </div>
             </li>
@@ -55,8 +55,8 @@ const Paragraphs = ({ entries }: EntriesProps) => {
           // Handle nested description
           return (
             <div key={index}>
-              {entry.title && <div style={{ fontWeight: 'bold', marginBottom: '0.5em' }}>{entry.title}</div>}
-              <div style={{ marginLeft: '1em' }}>
+              {entry.title && <div style={{ fontWeight: 'bold', marginBottom: '0.2em' }}>{entry.title}</div>}
+              <div>
                 <Description content={entry.description} />
               </div>
             </div>
