@@ -1,11 +1,9 @@
-
 ![Save to pdf gif](./createpdf.gif)
 
 # Introduction
 
 Word processors are frustrating for creating a resume. You should be able to focus on the content of your resume, rather than noodling with the format.  
 This accomplishes that by allowing you to work in a JavaScript data object.
-
 
 ## Installation
 
@@ -20,6 +18,4 @@ Next, head to the browser at the correct port. To create the PDF, print the docu
 
 ### Gotchas
 
-Spell check your resume.ts file. This doesn't do that for you automatically.
-
-
+Spell check your resume.ts file. This should show red squigglies when you're viewing in the browser.
